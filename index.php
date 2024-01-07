@@ -1,3 +1,16 @@
+<?php
+@include 'config.php';
+
+session_start();
+
+if (!$conn) {
+    echo "Connection failed!";
+} else {
+    echo "Connection successful!";
+    // You can also set session variables or perform other actions here.
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +23,5 @@
 </head>
 <body>
    
-<h1>Hello loves<h1>
 </body>
 </html>
